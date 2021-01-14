@@ -11,7 +11,7 @@ namespace BowlingApp
             _game = game;
         }
 
-        public void PerformRoll(List<int> rollSequence)
+        public void PerformRoll(IEnumerable<int> rollSequence)
         {
             foreach (var roll in rollSequence)
             {

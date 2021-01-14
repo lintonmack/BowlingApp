@@ -4,6 +4,6 @@ namespace BowlingApp
 {
     public interface IGameManager
     {
-        void PerformRoll(List<int> rollSequence);
+        void PerformRoll(IEnumerable<int> rollSequence);
     }
 }

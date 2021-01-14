@@ -27,7 +27,7 @@ namespace BowlingApp
             }
         }
 
-        public void PlayFrame()
+        private void PlayFrame()
         {
             var rollSequences = _rollSequenceGenerator.Generate();
             _gameManager.PerformRoll(rollSequences);

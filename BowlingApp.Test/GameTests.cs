@@ -72,6 +72,7 @@ namespace BowlingApp.Test
             _rollSequenceGenerator.Generate().Returns(
                 x => new List<int> {10});
 
+
             // When
             var result = _game.Play();
 

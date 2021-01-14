@@ -7,6 +7,5 @@ namespace BowlingApp
     {
        void Handler();
 
-       void PlayFrame();
     }
 }

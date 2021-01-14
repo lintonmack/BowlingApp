@@ -2,21 +2,21 @@
 {
     public static class ScoreManager
     {
-        private static int Score;
+        private static int _score;
 
         public static int GetScore()
         {
-            return Score;
+            return _score;
         }
 
         public static void UpdateScore(int incrementBy)
         {
-            Score += incrementBy;
+            _score += incrementBy;
         }
 
         public static void ResetScore()
         {
-            Score = 0;
+            _score = 0;
         }
     }
 }
