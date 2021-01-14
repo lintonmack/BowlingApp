@@ -2,6 +2,6 @@ namespace BowlingApp
 {
     public interface IRollGenerator
     {
-        int Generate();
+        int Generate(int maxRollPossible);
     }
 }

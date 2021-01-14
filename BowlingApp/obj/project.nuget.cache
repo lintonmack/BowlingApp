@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oNodRnRlKNW1V1aAzRizTpX0yKyHDpAewVFnO4YcqoW13/AxapdUVZB2koO0JSqYlrxAAXJxScYWYQjBSKm3vw==",
+  "dgSpecHash": "ruOBr0ar1M7x5xx8YpgAjjLPhop+EB0gRuze2cqOKkZ1u5uGUMhDwvSBDH+qJlxFhQwgD0VTTc0YdoyqIr+4/w==",
   "success": true,
-  "projectFilePath": "/Users/linton/Desktop/Coding/bowling/BowlingApp/BowlingApp/BowlingApp.csproj",
+  "projectFilePath": "C:\\CodeKata\\BowlingApp\\BowlingApp\\BowlingApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

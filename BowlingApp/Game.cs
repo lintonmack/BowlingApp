@@ -5,39 +5,36 @@ namespace BowlingApp
 {
     public class Game : IGame
     {
-        private readonly IScoreManager _scoreManager;
-        private int _totalScore;
-        private readonly IEnumerable<Frame> _frames;
+        private readonly IFrameManager _frameManager;
 
+        private const int NumberOfFrames = 10;
 
         public Game(
-            IGameManager gameManager)
+            IFrameManager frameManager)
         {
-            _frames = gameManager.SetupFramesForGame();
+            _frameManager = frameManager;
+            ScoreManager.ResetScore();
         }
         public void Roll(int playersRoll)
         {
-            _totalScore += playersRoll;
+            ScoreManager.UpdateScore(playersRoll);
         }
 
         public int Score()
         {
-            return _totalScore;
+            return ScoreManager.GetScore();
         }
 
         public int Play()
         {
-            foreach (var frame in _frames)
-            {
-                _totalScore += 10;
-            }
+            _frameManager.Handler();
 
             return Score();
         }
 
-        public List<Frame> GetFrames()
+        public int GetFrames()
         {
-            return _frames.ToList();
+            return NumberOfFrames;
         }
     }
     

@@ -6,7 +6,7 @@ namespace BowlingApp
     {
         void Roll(int playersRoll);
         int Score();
-        List<Frame> GetFrames();
+        int GetFrames();
         int Play();
     }
 }

@@ -8,28 +8,33 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "/Users/linton/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\MackerethL\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/linton/Desktop/Coding/bowling/BowlingApp/BowlingApp/BowlingApp.csproj",
+      "projectUniqueName": "C:\\CodeKata\\BowlingApp\\BowlingApp\\BowlingApp.csproj",
       "projectName": "BowlingApp",
-      "projectPath": "/Users/linton/Desktop/Coding/bowling/BowlingApp/BowlingApp/BowlingApp.csproj",
-      "packagesPath": "/Users/linton/.nuget/packages/",
-      "outputPath": "/Users/linton/Desktop/Coding/bowling/BowlingApp/BowlingApp/obj/",
+      "projectPath": "C:\\CodeKata\\BowlingApp\\BowlingApp\\BowlingApp.csproj",
+      "packagesPath": "C:\\Users\\MackerethL\\.nuget\\packages\\",
+      "outputPath": "C:\\CodeKata\\BowlingApp\\BowlingApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/linton/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\MackerethL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.ao.com/nuget": {},
+        "http://nuget.drl.local:8080/nuget": {},
+        "http://teamcity/guestAuth/app/nuget/v1/FeedService.svc": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

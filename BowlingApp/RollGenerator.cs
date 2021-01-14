@@ -2,9 +2,9 @@ namespace BowlingApp
 {
     public class RollGenerator : IRollGenerator
     {
-        public int Generate()
+        public int Generate(int maxRollPossible)
         {
-            throw new System.NotImplementedException();
+            return 0;
         }
     }
 }

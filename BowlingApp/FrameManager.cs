@@ -5,25 +5,33 @@ namespace BowlingApp
 {
     public class FrameManager : IFrameManager
     {
-        private readonly IGame _game;
-        private readonly IRollGenerator _rollGenerator;
+        private readonly IGameManager _gameManager;
+        private readonly IRollSequenceGenerator _rollSequenceGenerator;
+
         private int NumberOfFrames = 10;
+        private List<List<int>> FrameResults;
+
 
         public FrameManager(
-            IGame game,
-            IRollGenerator rollGenerator)
+            IGameManager gameManager,
+            IRollSequenceGenerator rollSequenceGenerator)
         {
-            _game = game;
-            _rollGenerator = rollGenerator;
+            _gameManager = gameManager;
+            _rollSequenceGenerator = rollSequenceGenerator;
         }
-        public int[] Handler()
+        public void Handler()
         {
-            var scores = new List<int>();
             for (int i = 0; i < NumberOfFrames; i++)
             {
-                var rollGenerator = _rollGenerator.Generate();
-                var roll = _game.Roll();
+                PlayFrame();
             }
         }
+
+        public void PlayFrame()
+        {
+            var rollSequences = _rollSequenceGenerator.Generate();
+            _gameManager.PerformRoll(rollSequences);
+        }
+
     }
 }

@@ -1,7 +1,12 @@
+using System.Collections.Generic;
+using Microsoft.VisualBasic;
+
 namespace BowlingApp
 {
     public interface IFrameManager
     {
-        int[] Handler();
+       void Handler();
+
+       void PlayFrame();
     }
 }

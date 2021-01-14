@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using NSubstitute;
 using NUnit.Framework;
 
@@ -6,14 +7,21 @@ namespace BowlingApp.Test
     [TestFixture]
     public class GameTests
     {
+        private IRollGenerator _rollGenerator;
+        private IRollSequenceGenerator _rollSequenceGenerator;
         private IGameManager _gameManager;
-        private Game _game;
+        private IFrameManager _frameManager;
+        private IGame _game;
         
         [SetUp]
         public void Setup()
         {
-            _gameManager = new GameManager();
-            _game = new Game(_gameManager);
+            _rollGenerator = Substitute.For<IRollGenerator>();
+            _rollSequenceGenerator = Substitute.For<IRollSequenceGenerator>();
+            _frameManager = new FrameManager(_gameManager, _rollSequenceGenerator);
+            _game = new Game(_frameManager);
+            _gameManager = new GameManager(_game);
+
         }
         
         [Test]
@@ -24,7 +32,7 @@ namespace BowlingApp.Test
             var frames = _game.GetFrames();
 
             // When / Then
-            Assert.AreEqual(10, frames.Count);
+            Assert.AreEqual(10, frames);
         }
 
         [Test]
@@ -56,7 +64,15 @@ namespace BowlingApp.Test
         [Test]
         public void GivenAGameIsStarted_WhenPlayIsCalled_ThenAScoreOf100IsReturned()
         {
-            // Given / When
+            // Given
+
+            _rollGenerator.Generate(10).Returns(
+                x => 10);
+
+            _rollSequenceGenerator.Generate().Returns(
+                x => new List<int> {10});
+
+            // When
             var result = _game.Play();
 
             // Then 

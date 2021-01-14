@@ -10,3 +10,16 @@
 /Users/linton/Desktop/Coding/bowling/BowlingApp/BowlingApp/obj/Debug/netcoreapp3.1/BowlingApp.dll
 /Users/linton/Desktop/Coding/bowling/BowlingApp/BowlingApp/obj/Debug/netcoreapp3.1/BowlingApp.pdb
 /Users/linton/Desktop/Coding/bowling/BowlingApp/BowlingApp/obj/Debug/netcoreapp3.1/BowlingApp.genruntimeconfig.cache
+C:\CodeKata\BowlingApp\BowlingApp\bin\Debug\netcoreapp3.1\BowlingApp.exe
+C:\CodeKata\BowlingApp\BowlingApp\bin\Debug\netcoreapp3.1\BowlingApp.deps.json
+C:\CodeKata\BowlingApp\BowlingApp\bin\Debug\netcoreapp3.1\BowlingApp.runtimeconfig.json
+C:\CodeKata\BowlingApp\BowlingApp\bin\Debug\netcoreapp3.1\BowlingApp.runtimeconfig.dev.json
+C:\CodeKata\BowlingApp\BowlingApp\bin\Debug\netcoreapp3.1\BowlingApp.dll
+C:\CodeKata\BowlingApp\BowlingApp\bin\Debug\netcoreapp3.1\BowlingApp.pdb
+C:\CodeKata\BowlingApp\BowlingApp\obj\Debug\netcoreapp3.1\BowlingApp.csprojAssemblyReference.cache
+C:\CodeKata\BowlingApp\BowlingApp\obj\Debug\netcoreapp3.1\BowlingApp.AssemblyInfoInputs.cache
+C:\CodeKata\BowlingApp\BowlingApp\obj\Debug\netcoreapp3.1\BowlingApp.AssemblyInfo.cs
+C:\CodeKata\BowlingApp\BowlingApp\obj\Debug\netcoreapp3.1\BowlingApp.csproj.CoreCompileInputs.cache
+C:\CodeKata\BowlingApp\BowlingApp\obj\Debug\netcoreapp3.1\BowlingApp.dll
+C:\CodeKata\BowlingApp\BowlingApp\obj\Debug\netcoreapp3.1\BowlingApp.pdb
+C:\CodeKata\BowlingApp\BowlingApp\obj\Debug\netcoreapp3.1\BowlingApp.genruntimeconfig.cache
